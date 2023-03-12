@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!-- Utilizar todas as tags explicadas nas aulas: <h1> até <h6>, <p>, <mark>,
+<small>, <i>, <u>, <strong>, <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>, <blockquote>;
+Utilizar novas tags sugeridas: <font>, <del>, <p>, <abbr> (a ideia é buscar estas
+tags na internet, entender como ela funciona e utilizar no texto). -->
+<html>
+
+<head>
+    <title>Primeiro desafio</title>
+</head>
+
+<body>
+    <h1 id="inicio"> Primeiro desafio do curso: Formação HTML Web Developer</h1>
+    <hr />
+    <p style="font-family: Verdana">
+        <!--Inseri a formatação de fonte mas ela não suporta o HTML5-->
+        <ol>
+            <li><a href="#historia">História da computação</a>
+                <ol type="I">
+                    <li><a href="#primeiro">O primeiro computador</a></li>
+                    <li><a href="#surgimento">Surgimento da Internet</a></li>
+                    <li><a href="#o-que-sao">O que são Clients e Servers</a></li>
+                    <ul style="list-style: disc;">
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#servers">Servers</a></li>
+                    </ul>
+                </ol>
+            </li>
+            <li><a href="#linguagem">O que é Linguagem de Programação</a></li>
+            <li><a href="#estrutura">Estrutura do HTML</a></li>
+            <li><a href="#tags">O que são Tags</a>
+                <ol type="I">
+                    <li><a href="#atributos">Atributos básicos das Tags</a></li>
+                    <li><a href="#textos">Tags para textos</a>
+                        <ul style="list-style: disc;">
+                            <li><a href="#titulos">Títulos</a></li>
+                            <li><a href="#paragrafos">Paragrafos</a></li>
+                            <li><a href="#formatacao">Formatações de texto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#listas">Listas</a>
+                        <ul style="list-style: disc;">
+                            <li><a href="#ordenadas">Ordenadas</a></li>
+                            <li><a href="#nao-ordenadas">Não ordenadas</a></li>
+                            <li><a href="#descricao">Descrição de Lista</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#links">Links</a></li>
+                </ol>
+            </li>
+            <li><a href="#testes">Testes de novas Tags</a></li>
+            <li><a href="#referencias">Referências</a></li>
+        </ol>
+    </p>
+    <br />
+    <h2 id="historia">HISTÓRIA DA COMPUTAÇÃO</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <h3 id="primeiro">O primeiro computador</h3>
+    <p>
+        Os computadores de primeira geração surgiram a partir de 1951, que funionavam por meio de válvulas eletrônicas e
+        circuitos. Neste ano foi lançado o primeiro computador, o ENIAC que foi desenvolvido a pedido do exército dos
+        Estados Unidos e possuiam acesso restrito e de grande consumo de energia.
+    </p>
+    <br />
+    <h3 id="surgimento">Sugirmento da Internet</h3>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Tudo se iniciou devido à Guerra Fria que acontecia em 1957 entre os Estados Unidos e a União Soviética. Os
+        estados Unidos em prol de sua proteção, queriam uma maneira de eficiente de proteger suas informações e
+        comunicações a um possível ataque nuclear soviético. Devido a esses esforços e a inovação fui iniciado a
+        tragetória do que chamamos hoje de Internet.
+    </p>
+    <p>
+        Em 1957 a União Soviética lançou o primeiro satélite o Sputnik, e os Estados Unidos pensaram que o motivo seria
+        para espionagem. O presidente militar estadunisense da época fundou uma agência voltada especialmente para
+        estudos tecnológicos para guerra a DARPA, que em 1969 a tecnologia principal que criaram foi a Arpanet que
+        resolveria a
+        preocupação de um possível ataque nuclear da União Soviética.
+    </p>
+    <p>
+        A Arpanet inicialmente era uma pequena rede de quatro pontos ligados por computadores: um SDS SIGMA 7 na
+        Universidade da Califórnia, um SDS 90 na Universidade de Stanford, um IBM 37075 no Centro de Matemática de Los
+        Angeles e um DEC PDP-10 na base militar de Utah.
+    </p>
+    <p>
+        A partir desta rede, verificaram que os computadores não se comunicavam muito bem já que tinham linguens
+        diferentes pois eram de fabricantes diferentes. Então alguns pesquisadores da Universidade da California criaram
+        o Protocolo <abbr title="Network Control Protocol">NCP</abbr>, que tinha uma
+        linguagem única para conseguir a comunicação entre os
+        computadores
+    </p>
+    <p>
+        Posteriormente foi criado dois protocolos que se unificaram: o <abbr
+            title="Transmission Control Protocol">TCP</abbr> que resolvia
+        o problema do NPC de parar a rede para fazer uma nova conexão, mas que teria que ser aprimorado já que não
+        identificava os computadores devido a quantidade na rede, assim surgiu o IP (Internet Protocol) criados,
+        respectivamente, pelos pesquisadores Robert Kahn e Vint Cerf. A junção dos dois trabalhos resultou no protocolo
+        TCP/IP que utilizamos até hoje com um versão mais avançada.
+    </p>
+    <h4 id="o-que-sao">O que são Clients e Servers</h4>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <h5 id="clients">Clients</h5>
+    <p>
+        Client é tudo aquilo que consome produtos ou serviços de algum lugar, na tecnologia Client são aqueles que
+        consomem a informação no caso os aparelhos (celulares, computadores, notebooks).
+    </p>
+    <h5 id="servers">Servers</h5>
+    <p>
+        Como no nome já explicativo, Server são aqueles que servem as informações para os Clients.
+    </p>
+    <h5 id="comunicacao">Comunicação do Client-Server</h5>
+    <p>
+        A comunicação é feita pela Internet, por exemplo um notebook (client) conecta ao Servidor (Server) através da
+        Internet, recebendo as informações que o servidor processa retornando arquivos estáticos como: HTML, CSS,
+        JavaScript, imagens, etc...
+    </p>
+    <br />
+    <h2 id="linguagem">O QUE É LINGUAGEM DE PROGRAMAÇÃO</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        A linguagém de Programaçao segundo o site Rockcontente <blockquote>"É uma linguagem formal que, através de uma
+            série de instruções, permite que um programador escreva um conjunto
+            de ordens, ações consecutivas, dados e algoritmos para criar programas que controlam o comportamento físico
+            e
+            lógico de uma máquina."</blockquote>
+    </p>
+    <br />
+    <h2 id="estrutura">ESTRUTURA DO HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        A estrutura básica do HTML é composto pela seguinte forma: </p>
+    <img width="350"
+        src="//2.bp.blogspot.com/-66ubsuDigXs/WIoq35ON5iI/AAAAAAAAABQ/hiuw3RAr4gcFMX0gvYxM_SyYzXDODAAdgCLcB/s1600/HTML%2Bimg%2B-%2B0.0.0.PNG" />
+    <ul>
+        <li>DOCTYPE informa qual o tipo do arquivo a ser criado;</li>
+        <li>Html informa a página em que o código será inserido;</li>
+        <li>Head é tudo aquilo que carrega antes de aparecer ao usuário;</li>
+        <li>Body é o corpo do site, ou seja, tudo aquilo que o usuário vê na página.</li>
+    </ul>
+    <br />
+    <h2 id="tags">O QUE SÃO TAGS</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        As Tags possuem uma estrutura padrão, sempre entre o sinais de menor e maior <""> e ela deve ser fechada com o
+            sinal de barra / após o sinal de menor:</p>
+    <img width="500"
+        src="https://programadoresdepre.com.br/wp-content/webp-express/webp-images/uploads/2022/04/estrutura-de-um-elemento-html-768x398.jpg.webp" />
+
+
+    <br />
+    <h3 id="atributos">Atributos básicos das Tags</h3>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>São as propriedades que uma Tag pode ter: as globais (todas as tags vão ter) ou as específicas de cada Tag.</p>
+    <h4 id="genericos">Genéricas</h4>
+    <ul>
+        <li><strong>ID</strong> que é um identificador do elemento, usada para formatações futuras com o CSS, por
+            exemplo;
+        </li>
+        <li><strong>Style</strong> com o Strong (negrito) que permite inserir comandos do CSS direto no elemento. Ex:
+            style="color:
+            blue", deixa seu elemento
+            com a fonte <strong style="color: blue;">azul e negrito</strong>;</li>
+        <li><strong>Class</strong> também utilizado para formatação mais voltado para padronização. Ou seja, ele formata
+            em grupos. Ex:
+            <i>Class="título"</i> todos elementos nomeados com <i>"título"</i> terão a mesma formatação.
+        </li>
+    </ul>
+    <h4 id="especificos">Específicas</h4>
+    <ul>
+        <li><strong>Input</strong> insere um campo com bordas texto no HTML e ele tem um atributo "type" que faz com que
+            você escolha
+            qual deve ser o tipo de preenchimento daquele campo ex: enviar, check, números, cores... </li>
+        <input type="color" />
+        <li><strong>Img</strong> permita que insira uma imagem e para a imagem aparecer é preciso do atributo "scr" onde
+            você insere o link da imagem ou o caminho da pasta onde ela esta. Ex: img scr ="link" ou img
+            scr ="/Imagens/teste_Colheita.jpg".
+        </li>
+        <img width="200" src="/Imagens/teste_Colheita.jpg" />
+    </ul>
+
+    <h3 id="textos">Tags para textos</h3>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Aqui iremos explicar as principais tags utilizadas para inserir textos em sua página: títulos, parágrafos e
+        formatações.
+    </p>
+    <br />
+    <h4 id="titulos">Títulos</h4>
+    <p>As tags utilizadas para titulos são h1, h2, h3..., h6 e seus tamanhos possuem diferenças seguindo uma ordem
+        Decrescente:
+        <h1>h1 Título</h1>
+        <h2>h2 Título</h2>
+        <h3>h3 Título</h3>
+        <h4>h4 Título</h4>
+        <h5>h5 Título</h5>
+        <h6>h6 Título</h6>
+    </p>
+    <br />
+    <h4 id="paragrafos">Parágrafos</h4>
+    <p>Todo texto deve ser utilizado e a cada novo parágrafo deve ser inserido uma nova tag "p" </p>
+    <p><code>p Texto que aparece ao usuário p </code> </p>
+    <br />
+    <h4 id="formatacao">Formatações de Texto</h4>
+    <ul>
+        <li>Citação: podemos inserir uma citação de outro autor com a tag <i>blockquote</i> que insere uma margem antes
+            do
+            texto, por
+            exemplo:
+            <blockquote>"Gosto do impossível porque lá a concorrência é menor." - Walt Disney</blockquote>
+        </li>
+        <li>Negrito: utilizamos a tag "strong" para deixar as palavras em <strong>negrito</strong>;</li>
+        <li>Itálico: utilizamos a tag "i" para deixar as palavras em <i>itálico (deitadas)</i>;</li>
+        <li>Sublinhado: utilizamos a tag "u" de undeline para deixar uma palavra <u>sublinhada;</u></li>
+        <li>Grifado: utilizamos a tag "mark" para deixar palavras <mark>grifadas com aspecto de marca texto</mark>;</li>
+        <li>Sobrescrito: utilizamos a tag "sup" para deixar algo sobrescrito<sup> aqui</sup>;</li>
+    </ul>
+    <br />
+    <h3 id="listas">Listas</h3>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Existem tipos de Listas as Ordenadas, Não ordenadas e Descrições de lista. Aqui vamos explicar melhor sobre cada
+        uma.</p>
+    <h4 id="ordenadas">Listas Ordenadas</h4>
+    <p>É o tipo de lista como já diz o nome com ordem e pode ser utilizada com os sistemas de número indo-arábico,
+        Romano e por letras minúsculas e maiúsculas. </p>
+    <p>Utilizamos a tag <strong>"ol"</strong> de <i>ordered lists</i> para abrir o campo
+        das linhas e <strong>"li"</strong> de <i>line</i> para inserir cada tópico e para alterar o sistema de listagem,
+        utilizamos o
+        <strong>"type"</strong> após a tag para aterar o tipo: </p>
+    </p>
+    <ol type="1">
+        <li>Type="1" - Números indo-arábico</li>
+    </ol>
+    <ol type="I">
+        <li>Type="I" - Números romanos maiúsculo</li>
+    </ol>
+    <ol type="i">
+        <li>Type="i" - Números romanos mainúsculo</li>
+    </ol>
+    <ol type="A">
+        <li>Type="A" - Letras maiúsculas</li>
+    </ol>
+    <ol type="a">
+        <li>Type="a" - Letras minúsculas</li>
+    </ol>
+    <h4 id="nao-ordenadas">Listas Não-ordenadas</h4>
+    <p>Ao contrário das listas ordenadas, como já descreve o nome este tipo de lista não tem ordem, apenas os tópicos.
+    </p>Agora utilizamos a tag <strong>"ul"</strong> de <i>"Unordered Lists"</i> para abrir e <strong>"li"</strong> para
+    as linhas e podemos
+    alterar com o <strong>"type"</strong> qual o tipo dos tópicos. Sendo os mais conhecidos por círculo, bolinha,
+    quadrado
+    ou nenhum.</p>
+    <ul type="disc">
+        <li>Type="disc" - Disco/Bolinha (círculo preenchido)</li>
+    </ul>
+    <ul type="circle">
+        <li>Type="circle" - Círculo (Sem preenchimento)</li>
+    </ul>
+    <ul type="square">
+        <li>Type="square" - Quadrado </li>
+    </ul>
+    <ul type="none">
+        <li>Type="none" - Nenhum</li>
+    </ul>
+    <h4 id="descricao">Descrição de lista</h4>
+    <p>Este tipo de lista gera uma listagem e logo abaixo do item, insere um margem para uma descrição.</p>
+    <p>Agora utilizamos a tag <strong>"dl"</strong> de <i>"Description Lists"</i> para abrir o campo da listagem,
+        <strong>"dt"</strong> <i>"discription term"</i> para os itens e <strong>"dd"</strong> para a descrição dos
+        itens
+    </p>
+    <dl>
+        <dt>"dt" - Café</dt>
+        <dd>"dd" - preto e forte</dd>
+        <dt>Leite</dt>
+        <dd>Integral ou desnatado</dd>
+    </dl>
+    <br />
+    <h3 id="links">Links</h3>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Os links são utilizados para a navegação entre páginas e para adicionarmos utilizamos a tag <strong>"a"</strong>
+        de <i>"ancor"</i> para ancorar à algum lugar. A formatação do link é padrão então a frase ficará sublinhada e de
+        cor difernete, mas com o CSS podemos alterar depois.</p>
+    <p>Mas não utilizamos apenas a tag <strong>"a"</strong>, precisamos de um atributo para inserir qual a ligação a ser
+        feita, por isso,
+        utilizamos o <strong>"href"</strong> que é a referência dessa âncora e com ele adicionamos nossos links.
+    </p>
+    <a href="http://dio.me">Site da DIO.me</a>
+    <br />
+    <p>Temos outro atributo que podemos utilizar dentro da tag <strong>"a"</strong> que é o <strong>"taget"</strong>.
+        Nele podemos utlizar as opções de como o link vai se comportar, como por exemplo, abrir na mesma aba ou em
+        outra.</p>
+    <ul>
+        <li>Target="_self" - abre na mesma aba (comportamento padrão da tag
+            <strong>"a"</strong>)</li>
+        <a href="http://dio.me" target="_self">Site da DIO.me</a>
+        <li>Target="_blank" - abre em outra aba</li>
+        <a href="http://dio.me" target="_blank">Site da DIO.me</a>
+    </ul>
+    <p>Podemos adicionar também outro atributo na tag <strong>"a"</strong>, que se chama <strong>"title"</strong>. Ele
+        cria um balão que ao passar por cima do link, um tíyulo apareça.</p>
+    <a href="http://dio.me" title="Clique aqui e confira">Site da DIO.me</a>
+    <br />
+    <br />
+    <h2 id="testes">TESTES DE NOVAS TAGS</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>Utilizamos a tag <del><strong>"h2"</strong></del> <strong>"p"</strong> para inserirmos textos em nossa página.
+    </p>
+    <p>Existem os seguintes protocolos:</p>
+    <ul>
+        <li><abbr title="Network Control Protocol">NCP</abbr></li>
+        <li><abbr title="Transmission Control Protocol">TCP</abbr></li>
+        <li><abbr title="Internet Protocol">IP</abbr></li>
+        <li><abbr title="Transmission Control Protocol/ Internet Protocol">TCP/IP</abbr></li>
+    </ul>
+    <br />
+    <hr />
+    <h2 id="referencias">Referências</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>https://tecnoblog.net/especiais/eniac-primeiro-computador-do-mundo-completa-65-anos/</p>
+    <p>https://www.w3schools.com/html/html_links.asp</p>
+    <p>https://mundoeducacao.uol.com.br/matematica/sistema-numeracao.htm</p>
+    <p>https://web.dio.me/track/formacao-html-web-developer</p>
+</body>
+
+</html>
